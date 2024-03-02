@@ -40,7 +40,7 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-light fs-5 text-end">
                         <li class="nav-item mx-2">
-                            <a class="nav-link active" href="#home" aria-current="page">Inicio</a>
+                            <a class="nav-link active" href="#" aria-current="page">Inicio</a>
                         </li>
                         <li class="nav-item mx-2">
                             <a class="nav-link active" href="#about">Quienes Somos</a>
@@ -172,15 +172,57 @@
             </section>
 
             <!-- CONTACT -->
-            <section id="contact">
-                
+            <section id="contact" class="bg-black text-light py-5">
+                <div class="container text-center px-5">
+                    <h2 class="text-uppercase fw-normal fs-2">CONTACTO</h2>
+
+                    <!-- HORIZONTAL RULE -->
+                    <hr class="my-5">
+                    <!-- HORIZONTAL RULE -->
+
+                    <div class="row">
+                        <form class="text-start">
+
+                            <!-- NAME & EMAIL INPUT -->
+                            <div class="row">
+                                <div class="col-12 col-sm-6 py-2" data-validate="Nombre requerido">
+                                    <label class="form-label" for="nombre">Nombre</label>
+                                    <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+                                </div>
+    
+                                <div class="col-12 col-sm-6 py-2" data-validate="El email debe ser válido! (nombre@ejemplo.com)">
+                                    <label class="form-label" for="email" >Email</label>
+                                    <input class="form-control" type="email" name="email" id="email" placeholder="Ingrese su email">
+                                </div>
+                            </div>
+
+                            <!-- SUBJECT INPUT -->
+                            <div class="col-12 py-2" data-validate="Asunto requerido">
+                                <label class="form-label" for="asunto">Asunto</label>
+                                <input class="form-control" type="text" name="asunto" id="asunto" placeholder="¿Por qué nos contacta?">
+                            </div>
+
+                            <!-- MESSAGE INPUT -->
+                            <div class="col-12 py-2" data-validate="Mensaje requerido">
+                                <label class="form-label" for="mensaje">Mensaje</label>
+                                <textarea class="form-control" name="mensaje" id="mensaje" placeholder="Escriba su mensaje aquí..."></textarea>
+                            </div>
+
+                            <!-- SUBMIT BUTTON -->
+                            <div class="col-12 py-3">
+                                <button type="submit" class="btn btn-info text-light">Enviar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
             </section>
 
         </main>
 
         <!-- FOOTER -->
         <footer id="footer">
-
+            
         </footer>
 
         <!-- BOOTSTRAP 5.3.2 JS -->
