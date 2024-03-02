@@ -16,6 +16,12 @@ body{
 
 }
 
+/* NAVBAR */
+
+.gradient-custom{
+    background: linear-gradient(180deg, rgba(0,0,0,.6) 0%, rgba(255,255,255,0) 100%);
+}
+
 /* HEADER */
 
 .carousel-item::after{
@@ -31,6 +37,14 @@ body{
 /* ABOUT */
 
 /* FEATURED */
+
+.card{
+    border: 0;
+}
+
+.card-body{
+    min-height: 184px;
+}
 
 /* CONTACT */
 
