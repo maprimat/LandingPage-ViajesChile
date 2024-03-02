@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Matias Prieto">
-        <meta name="description" content="Revisa nuestros viajes alrededor de Chile!">
+        <meta name="description" content="¡Los mejores viajes alrededor de Chile!">
         <meta name="keywords" content="viajes, chile, travel, avion, bus">
         <!-- BOOTSTRAP 5.3.2 CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"/>
@@ -26,11 +26,11 @@
     <body>
 
         <!-- NAVBAR -->
-        <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-lg bg-transparent navbar-dark fixed-top">
             <div class="container px-5">
                 <a id="logo" class="navbar-brand" href="#">
                     <img class="d-inline-block align-text-top" src="./assets/img/viajes.svg" width="40px" alt="logo">
-                    <span class="d-inline-block align-text-top fw-normal fs-4">Viajes Chile</span>
+                    <span class="d-inline-block align-text-top fw-medium fs-3">Viajes Chile</span>
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
@@ -38,7 +38,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-light fs-5">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-light fs-5 text-end">
                         <li class="nav-item mx-2">
                             <a class="nav-link active" href="#home" aria-current="page">Inicio</a>
                         </li>
@@ -58,8 +58,31 @@
 
         <!-- HEADER -->
         <header id="hero">
+            
+            <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                <div class="carousel-inner">
+                    
+                    <!-- IMAGEN 1 / INTERVALO 3S -->
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./assets/img/carousel1.jpg" class="d-block w-100" alt="carousel1">
+                    </div>
 
+                    <!-- IMAGEN 2 / INTERVALO 3S -->
+                    <div class="carousel-item"  data-bs-interval="3000">
+                        <img src="./assets/img/carousel2.jpg" class="d-block w-100" alt="carousel2">
+                    </div>
+
+                    <!-- IMAGEN 3 / INTERVALO 3S -->
+                    <div class="carousel-item"  data-bs-interval="3000">
+                        <img src="./assets/img/carousel3.jpg" class="d-block w-100" alt="carousel3">
+                    </div>
+
+                </div>
+            </div>
         </header>
+
+        <!-- CAROUSEL -->
+        
 
         <!-- MAIN CONTENT -->
         <main>
@@ -78,7 +101,7 @@
             <section id="contact">
                 
             </section>
-            
+
         </main>
 
         <!-- FOOTER -->
@@ -89,6 +112,9 @@
         <!-- BOOTSTRAP 5.3.2 JS -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-        <script src=""></script>
+        <!-- JQUERY -->
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- JAVASCRIPT -->
+        <script defer src="./assets/js/javascript.js"></script>
     </body>
 </html>
